@@ -23,7 +23,7 @@ body {
 }
 img { display: block; max-width: 100%; }
 /* Sepia look for every photo. Delete the next line to go back to full color. */
-img { filter: sepia(1) contrast(1.05) brightness(.98); }
+img { filter: sepia(.5) contrast(1.05) brightness(.98); }
 a { color: inherit; }
 i { font-style: normal; opacity: .6; margin: 0 .3em; }
 
