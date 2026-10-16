@@ -22,6 +22,8 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 img { display: block; max-width: 100%; }
+/* Sepia look for every photo. Delete the next line to go back to full color. */
+img { filter: sepia(1) contrast(1.05) brightness(.98); }
 a { color: inherit; }
 i { font-style: normal; opacity: .6; margin: 0 .35em; }
 
@@ -173,17 +175,19 @@ i { font-style: normal; opacity: .6; margin: 0 .35em; }
 }
 .section-title hr { flex: 1; border: 0; border-top: 1px solid var(--rule); margin: 0; }
 
-.grid { display: grid; grid-template-columns: 1fr; gap: 48px 36px; }
-@media (min-width: 720px) { .grid { grid-template-columns: 1fr 1fr; } }
+.grid { display: grid; grid-template-columns: 1fr; gap: 40px 28px; }
+@media (min-width: 600px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 960px) { .grid { grid-template-columns: repeat(3, 1fr); } }
 
 .thumb { display: block; overflow: hidden; background: #a9a69f; cursor: zoom-in; }
 .thumb img {
   width: 100%;
-  aspect-ratio: 4 / 3.4;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
   transition: transform .6s ease;
 }
 .thumb:hover img { transform: scale(1.03); }
+@media (min-width: 600px) { .thumb img { aspect-ratio: 5 / 4; } }
 
 .meta {
   margin: 18px 0 6px;
@@ -196,7 +200,7 @@ i { font-style: normal; opacity: .6; margin: 0 .35em; }
   margin: 0 0 10px;
   font-family: var(--serif);
   font-weight: 400;
-  font-size: clamp(28px, 4vw, 36px);
+  font-size: clamp(24px, 2.3vw, 30px);
   line-height: 1.1;
   text-transform: uppercase;
 }
