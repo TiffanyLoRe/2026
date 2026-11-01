@@ -499,3 +499,6 @@ dialog.case::backdrop { background: var(--navy); }
 .timeline li:first-child { border-top: 0; }
 .timeline span { font-family: var(--serif); font-size: 20px; line-height: 1.2; }
 @media (min-width: 820px) { .timeline { columns: 2; column-gap: 48px; } .timeline li { break-inside: avoid; } }
+
+.case-myrole { margin: 18px 0 20px; max-width: 46ch; font-size: 14px; line-height: 1.55; }
+.case-myrole b { display: block; margin-bottom: 4px; font-size: 10px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; }
