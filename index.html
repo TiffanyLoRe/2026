@@ -54,7 +54,7 @@
       <!-- STATS -->
       <section class="stats" aria-label="At a glance">
         <div><strong>20+</strong><span>Years of experience</span></div>
-        <div><strong>$8M</strong><span>Global advertising budget</span></div>
+        <a class="stat-link" href="#lauder" data-case="lauder"><strong>$8M</strong><span>Global advertising budget</span><em class="cue">View case study <b aria-hidden="true">→</b></em></a>
         <a class="stat-link" href="#keurig" data-case="keurig"><strong>$11M</strong><span>Campaign executed in 10 days</span><em class="cue">View case study <b aria-hidden="true">→</b></em></a>
       </section>
 
@@ -143,18 +143,18 @@
           </article>
 
           <article class="card">
-            <a class="thumb" href="estee-lauder-large.jpg" data-lightbox data-caption="Estée Lauder — Double Wear campaign">
+            <a class="thumb" href="#lauder" data-case="lauder" aria-label="Open the Estée Lauder case study">
               <img src="estee-lauder.jpg" alt="Estée Lauder Double Wear print advertisement featuring two models" loading="lazy" style="object-position:0% 50%">
             </a>
             <h3>Estée Lauder</h3>
             <p class="sub">Global advertising + global design</p>
             <p class="years">2004 – 2008</p>
             <ul class="facts">
-              <li>$8M budget</li>
+              <li><a class="case-link" href="#lauder" data-case="lauder">$8M global advertising budget</a></li>
               <li>Photography · Product packaging · Global campaigns</li>
               <li class="soft">Enacted contracts with top models</li>
             </ul>
-            <a class="view" href="estee-lauder-large.jpg" data-lightbox data-caption="Estée Lauder — Double Wear campaign">View image <span aria-hidden="true">→</span></a>
+            <a class="view" href="#lauder" data-case="lauder">View case study <span aria-hidden="true">→</span></a>
           </article>
 
           <!-- Chanel card: stays hidden until you upload a photo named chanel.jpg next to this file -->
@@ -348,6 +348,98 @@
     </div>
   </dialog>
 
+  <!-- ======================================================================
+       CASE STUDY LAYER: ESTÉE LAUDER
+       Opens from the $8M stat, the Estée Lauder card and its thumbnail.
+       To drop any image, delete its <figure class="doc"> block.
+       ====================================================================== -->
+  <dialog id="case-lauder" class="case" aria-labelledby="case-lauder-title">
+
+    <div class="case-bar">
+      <button type="button" class="case-close" data-close-case><span aria-hidden="true">←</span> Back to portfolio</button>
+      <span class="case-bar-label">Case study 02 / Estée Lauder</span>
+    </div>
+
+    <header class="case-hero">
+      <div class="case-hero-copy">
+        <p class="eyebrow">Estée Lauder <i>·</i> 2004 – 2008 <i>·</i> Global Design + Global Advertising</p>
+        <h2 id="case-lauder-title">$8M<br>global advertising</h2>
+        <p class="case-lede">One skincare product, followed from the first physical comp of its jar to an ad running around the world.</p>
+        <p class="case-myrole"><b>My role</b>Three years in Design, one in Advertising. I built the physical comp of the jar and cap and worked with a vendor to decorate it. Later I worked with a photographer to shoot that jar, and with the model, hair, makeup and wardrobe team to shoot the ad. A designer then pulled it all together.</p>
+        <p class="case-roles">Packaging comps <i>·</i> Vendors <i>·</i> Product photography <i>·</i> Model shoots <i>·</i> Production <i>·</i> Global release</p>
+      </div>
+      <div class="case-hero-photo">
+        <img src="lauder-ad.jpg" alt="Estée Lauder skincare advertisement: a model with her hair pulled back beside four eye care jars" loading="lazy">
+      </div>
+    </header>
+
+    <div class="case-body">
+
+      <section class="case-section">
+        <div class="section-title"><h3>At a glance</h3><hr></div>
+        <div class="kpi-grid four">
+          <div class="kpi"><strong>$8M</strong><span>Global advertising budget</span><p>Advertising, the final year of four at Estée Lauder.</p></div>
+          <div class="kpi"><strong>4 yrs</strong><span>Design, then Advertising</span><p>Three years in the Design department, one in Advertising. Design in 2007, advertising in 2008.</p></div>
+          <div class="kpi"><strong>3</strong><span>Models I worked with</span><p>Hilary Rhoda, Carolyn Murphy and Gwyneth Paltrow.</p></div>
+          <div class="kpi"><strong>3</strong><span>Categories, one schedule</span><p>Skincare, makeup and fragrance, tracked from shoot to national ad in the Fall 2008 global plan.</p></div>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="section-title"><h3>Concept to ad</h3><hr></div>
+        <ol class="steps">
+          <li><span class="when">Design</span><b>The jar</b><p>Built the physical comp of the plastic jar and cap, from the die line to the finished piece.</p></li>
+          <li><span class="when">Vendors</span><b>The finish</b><p>Managed the comp vendors for milling, spraying and decorating the jar.</p></li>
+          <li><span class="when">Advertising</span><b>The shoot</b><p>Photographed the jar with a photographer, then the ad with the model, hair, makeup and wardrobe team.</p></li>
+          <li><span class="when">Worldwide</span><b>The ad</b><p>A designer pulled the images and copy together. The line launched in early 2008, rolled out across Europe and travel retail.</p></li>
+        </ol>
+      </section>
+
+      <section class="case-section">
+        <div class="section-title"><h3>The jar</h3><hr></div>
+        <div class="gallery portrait">
+          <figure class="doc">
+            <a href="lauder-comp.jpg" data-lightbox data-caption="Revelation Age-Resisting Brightening Creme — die line and comp photo"><img src="lauder-comp.jpg" alt="Die line of the Revelation jar with custom colors and dimensions, above a photo of the finished comp jar with a gold cap" loading="lazy"></a>
+            <figcaption><b>Die line and comp</b>Product artwork per design direction, standards, component and copy. I managed the comp vendors for milling, spraying and decorating.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="section-title"><h3>The ad</h3><hr></div>
+        <div class="gallery">
+          <figure class="doc">
+            <a href="lauder-draft.jpg" data-lightbox data-caption="Revelation Age-Resisting Brightening Creme — first draft of the ad"><img src="lauder-draft.jpg" alt="First draft of the Revelation Age-Resisting Brightening Creme ad with placeholder copy: a model resting her chin on her arm beside the jar" loading="lazy"></a>
+            <figcaption><b>First draft</b>Model, jar and layout in place, with placeholder copy.</figcaption>
+          </figure>
+          <figure class="doc">
+            <a href="lauder-ad.jpg" data-lightbox data-caption="Skincare advertisement, global, Nov ’07 – Oct ’08. Model photo Craig McDean, product photo Robin Broadbent"><img src="lauder-ad.jpg" alt="Eye care advertisement: The delicate skin around your eyes ages first, with four jars labelled repair, lift, hydrate and anti-wrinkle" loading="lazy"></a>
+            <figcaption><b>Eye care ad, global</b>Nov ’07 – Oct ’08. Model photo Craig McDean, product photo Robin Broadbent.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="section-title"><h3>The program</h3><hr></div>
+        <div class="gallery">
+          <figure class="doc wide">
+            <a href="lauder-schedule.jpg" data-lightbox data-caption="Fall 2008 global advertising schedule — skincare, makeup and fragrance"><img src="lauder-schedule.jpg" alt="Fall 2008 global advertising schedule with skincare, makeup and fragrance programs and dates from model shoot to national ad" loading="lazy"></a>
+            <figcaption><b>Fall 2008 global advertising</b>Skincare, makeup and fragrance programs, each tracked from model and product shoot through retouching and final art to the national ad.</figcaption>
+          </figure>
+          <figure class="doc wide">
+            <a href="lauder-usage.jpg" data-lightbox data-caption="Fall 2007 skincare advertising usage"><img src="lauder-usage.jpg" alt="Two layouts of a Fall 2007 skincare ad, Welcome to the future of Age Control, with three bottles in a glass beaker" loading="lazy"></a>
+            <figcaption><b>Fall 2007 skincare usage</b>Two layouts of the Age Control ad.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="case-foot">
+      <button type="button" class="case-close" data-close-case><span aria-hidden="true">←</span> Back to portfolio</button>
+    </div>
+  </dialog>
+
   <dialog id="lightbox" aria-label="Enlarged image">
     <img alt="">
     <p class="cap"></p>
@@ -373,52 +465,61 @@
       });
       dlg.addEventListener('click', function () { dlg.close(); });
 
-      /* Case study layer (Keurig). Opens from any [data-case] link, works with
-         the back button and a direct link ending in #keurig, and closes with Esc. */
-      var caseDlg = document.getElementById('case-keurig');
-      var lastOpener = null;
-      var pushed = false;
+      /* Case study layers. Each [data-case="name"] link opens <dialog id="case-name">.
+         Works with the back button, a direct link ending in #name, and Esc. */
+      var cases = {};
+      document.querySelectorAll('dialog.case').forEach(function (d) { cases[d.id.replace('case-', '')] = d; });
+      var current = null, lastOpener = null, pushed = false;
 
-      function openCase(opener, push) {
-        if (!caseDlg.showModal) { return; }
+      function openCase(name, opener, push) {
+        var d = cases[name];
+        if (!d || !d.showModal) { return; }
+        if (current && current !== d) { current.close(); }
         lastOpener = opener || null;
-        if (!caseDlg.open) { caseDlg.showModal(); }
-        caseDlg.scrollTop = 0;
+        current = d;
+        if (!d.open) { d.showModal(); }
+        d.scrollTop = 0;
         document.documentElement.classList.add('case-open');
-        if (push) { history.pushState({ keurig: 1 }, '', '#keurig'); pushed = true; }
+        if (push) { history.pushState({ casestudy: name }, '', '#' + name); pushed = true; }
       }
 
       document.querySelectorAll('[data-case]').forEach(function (a) {
         a.addEventListener('click', function (e) {
-          if (!caseDlg.showModal) { return; }
+          var name = a.getAttribute('data-case');
+          if (!cases[name] || !cases[name].showModal) { return; }
           e.preventDefault();
-          openCase(a, true);
+          openCase(name, a, true);
         });
       });
 
-      caseDlg.addEventListener('click', function (e) {
-        if (e.target.closest('[data-close-case]')) { caseDlg.close(); }
-      });
-
-      caseDlg.addEventListener('close', function () {
-        document.documentElement.classList.remove('case-open');
-        if (location.hash === '#keurig') {
-          if (pushed) { pushed = false; history.back(); }
-          else { history.replaceState(null, '', location.pathname + location.search); }
-        }
-        if (lastOpener) { lastOpener.focus(); }
+      Object.keys(cases).forEach(function (name) {
+        var d = cases[name];
+        d.addEventListener('click', function (e) {
+          if (e.target.closest('[data-close-case]')) { d.close(); }
+        });
+        d.addEventListener('close', function () {
+          if (current !== d) { return; }
+          current = null;
+          document.documentElement.classList.remove('case-open');
+          if (location.hash === '#' + name) {
+            if (pushed) { pushed = false; history.back(); }
+            else { history.replaceState(null, '', location.pathname + location.search); }
+          }
+          if (lastOpener) { lastOpener.focus(); }
+        });
       });
 
       window.addEventListener('popstate', function () {
-        if (location.hash === '#keurig' && !caseDlg.open) { openCase(null, false); }
-        else if (location.hash !== '#keurig' && caseDlg.open) {
+        var name = location.hash.slice(1);
+        if (cases[name]) { if (!current || current !== cases[name]) { openCase(name, null, false); } }
+        else if (current) {
           pushed = false;
           if (dlg.open) { dlg.close(); }
-          caseDlg.close();
+          current.close();
         }
       });
 
-      if (location.hash === '#keurig') { openCase(null, false); }
+      if (cases[location.hash.slice(1)]) { openCase(location.hash.slice(1), null, false); }
 
       /* Run a callback once an image has loaded (or right away if it already has) */
       function whenLoaded(pic, fn) {
